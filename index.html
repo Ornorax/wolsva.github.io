@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-omErDd1N57CA6wrNf+52Kv1KHLQ07SF/FRb/UKIr6IWwvLepEYmJl3Dl2U1n/vvK" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="./assets/js/killfeed.js"></script>
+    <title>int.wolsva</title>
+  </head>
+  <body>
+
+
+
+    <video src="assets/img/Moving Clouds Background.mp4" loop muted autoplay>
+    </video>
+
+    <button id="audioButton" onclick="toggleAudio()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0V0z"/>
+        <path id="playIcon" d="M8 5v14l11-7z"/>
+        <path id="pauseIcon" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+      <audio id="audioClip" src="assets/audio/24songs.mp3" loop autoplay></audio>
+    </button>
+
+    <div id="volumeSliderContainer">
+      <input type="range" min="0" max="1" step="0.1" value="0.5" id="volumeSlider">
+    </div>
+    
+    <div class="slider" style="display: none;">
+      <span>Minecraft - Best jeu ever</span>
+    </div>
+
+    <div class="card-container">
+
+      <!-- Profile Card -->
+      <div class="card">
+        <div class="card-header">
+          <div
+            style="background: url('./assets/img/banner.png')"
+            class="banner-img"
+          ></div>
+        </div>
+        <div class="card-body">
+          <div class="profile-header">
+            <div class="profil-logo">
+              <img src="./assets/img/logo.jpg" />
+            </div>
+            <div class="badges-container">
+              <a href="https://youtube.com/@wolsva?si=Y11GfN1nT3u5Ho2l" class="badge-item" target="_blank">
+                <img src="./assets/img/badges/youtube.png" alt="" />
+                <div class="tooltip tooltip-up">Youtube</div>
+              </a>
+              <a href="https://linkstack.fr/@Wolsva" class="badge-item" target="_blank">
+                <img src="./assets/img/badges/custom.png" alt="" />
+                <div class="tooltip tooltip-up">Réseaux</div>
+              </a>
+              <a href="#" class="badge-item" target="_blank">
+                <img src="./assets/img/badges/boost.webp" alt="" />
+                <div class="tooltip tooltip-up">Boost de serveur</div>
+              </a>
+              <a href="#" class="badge-item" target="_blank">
+                <img src="./assets/img/badges/nitro.webp" alt="" />
+                <div class="tooltip tooltip-up">Membre nitro depuis 4 ans</div>
+              </a>
+            </div>
+            
+          </div>
+         
+          <div class="profile-body">
+            <div class="username">int.wolsva
+      
+              <!-- remove the arrows if you  want a badge next to your name -->
+              <!-- <img src="/assets/img/badges/verified.png" alt="Icon" class="icons"> -->
+
+            </div>
+            <hr >
+            <div class="basic-infos">
+              <div class="category-title">À propos de moi</div>
+              <span class="type">132IQ</span>
+            </div>
+            <div class="basic-infos">
+              <div class="category-title">Membre depuis</div>
+              <p>25 Septembre 2018</p>
+            </div>
+            <div class="roles">
+              <div class="category-title">Roles</div>
+              <div class="roles-list">
+                <div class="role">
+                  <div class="role-color" style="background: rgb(0, 255, 0)"></div>🗣️ </div>
+                <div class="role">
+                  <div class="role-color" style="background: rgb(255, 255, 255)"></div>Hurensohn</div>
+                <div class="role">
+                  <div class="role-color" style="background: rgb(255, 247, 0)"></div>🧛🏿‍♂️</div>
+                <div class="role">
+                  <div class="role-color" style="background: rgb(0, 121, 186)"></div>Lit</div>
+                <div class="role">
+                  <div class="role-color" style="background: rgb(228, 29, 185)"></div>src on github</div>
+                <div class="role">
+                  <div class="role-color" style="background: rgb(236, 26, 26)"></div>:)</div>
+              </div>
+            </div>
+
+            <div class="note">
+              <div class="category-title">Note</div>
+              <textarea placeholder="Click for add a note"></textarea>
+            </div>
+            
+            <div class="message" onclick="copyToClipboard()">
+              <p class="m">Ajoute moi !</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal"> 
+        <a href="#" target="_blank">Pk tu cliques ?</a>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
